@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0479D9691ED5380B00C517A6 /* UIViewController+SMKControllerExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479D9681ED5380B00C517A6 /* UIViewController+SMKControllerExtension.m */; };
+		0479D9701ED5940A00C517A6 /* SMKCManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479D96C1ED5940A00C517A6 /* SMKCManger.m */; };
+		0479D9711ED5940A00C517A6 /* UIViewController+SMKControllerExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479D96F1ED5940A00C517A6 /* UIViewController+SMKControllerExtension.m */; };
 		04BC9ADC1ED43007000A059A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BC9ADB1ED43007000A059A /* main.m */; };
 		04BC9ADF1ED43007000A059A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BC9ADE1ED43007000A059A /* AppDelegate.m */; };
 		04BC9AE21ED43007000A059A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BC9AE11ED43007000A059A /* ViewController.m */; };
@@ -18,12 +19,14 @@
 		04BC9AF61ED43067000A059A /* TestVC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BC9AF41ED43067000A059A /* TestVC1.xib */; };
 		04BC9AFA1ED43079000A059A /* TestVC2.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BC9AF81ED43079000A059A /* TestVC2.m */; };
 		04BC9AFB1ED43079000A059A /* TestVC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04BC9AF91ED43079000A059A /* TestVC2.xib */; };
-		04BC9B071ED458E7000A059A /* SMKCManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 04BC9B041ED458E7000A059A /* SMKCManger.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0479D9671ED5380B00C517A6 /* UIViewController+SMKControllerExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SMKControllerExtension.h"; sourceTree = "<group>"; };
-		0479D9681ED5380B00C517A6 /* UIViewController+SMKControllerExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SMKControllerExtension.m"; sourceTree = "<group>"; };
+		0479D96B1ED5940A00C517A6 /* SMKCManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMKCManger.h; sourceTree = "<group>"; };
+		0479D96C1ED5940A00C517A6 /* SMKCManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMKCManger.m; sourceTree = "<group>"; };
+		0479D96D1ED5940A00C517A6 /* SMKSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMKSingleton.h; sourceTree = "<group>"; };
+		0479D96E1ED5940A00C517A6 /* UIViewController+SMKControllerExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SMKControllerExtension.h"; sourceTree = "<group>"; };
+		0479D96F1ED5940A00C517A6 /* UIViewController+SMKControllerExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SMKControllerExtension.m"; sourceTree = "<group>"; };
 		04BC9AD71ED43007000A059A /* SMKMVVMKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SMKMVVMKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BC9ADB1ED43007000A059A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		04BC9ADD1ED43007000A059A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -41,9 +44,6 @@
 		04BC9AF81ED43079000A059A /* TestVC2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC2.m; sourceTree = "<group>"; };
 		04BC9AF91ED43079000A059A /* TestVC2.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestVC2.xib; sourceTree = "<group>"; };
 		04BC9B011ED4336C000A059A /* LxDBAnything.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LxDBAnything.h; sourceTree = "<group>"; };
-		04BC9B031ED458E7000A059A /* SMKCManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMKCManger.h; sourceTree = "<group>"; };
-		04BC9B041ED458E7000A059A /* SMKCManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMKCManger.m; sourceTree = "<group>"; };
-		04BC9B061ED458E7000A059A /* SMKSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMKSingleton.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +57,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0479D96A1ED5940A00C517A6 /* SMKMVVMKit */ = {
+			isa = PBXGroup;
+			children = (
+				0479D96B1ED5940A00C517A6 /* SMKCManger.h */,
+				0479D96C1ED5940A00C517A6 /* SMKCManger.m */,
+				0479D96D1ED5940A00C517A6 /* SMKSingleton.h */,
+				0479D96E1ED5940A00C517A6 /* UIViewController+SMKControllerExtension.h */,
+				0479D96F1ED5940A00C517A6 /* UIViewController+SMKControllerExtension.m */,
+			);
+			path = SMKMVVMKit;
+			sourceTree = "<group>";
+		};
 		04BC9ACE1ED43007000A059A = {
 			isa = PBXGroup;
 			children = (
+				0479D96A1ED5940A00C517A6 /* SMKMVVMKit */,
 				04BC9AD91ED43007000A059A /* SMKMVVMKitDemo */,
 				04BC9AD81ED43007000A059A /* Products */,
 			);
@@ -76,7 +89,6 @@
 		04BC9AD91ED43007000A059A /* SMKMVVMKitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				04BC9B021ED458E7000A059A /* SMKMVVMKit */,
 				04BC9AF11ED4304B000A059A /* TestVC */,
 				04BC9ADD1ED43007000A059A /* AppDelegate.h */,
 				04BC9ADE1ED43007000A059A /* AppDelegate.m */,
@@ -111,18 +123,6 @@
 				04BC9AF91ED43079000A059A /* TestVC2.xib */,
 			);
 			path = TestVC;
-			sourceTree = "<group>";
-		};
-		04BC9B021ED458E7000A059A /* SMKMVVMKit */ = {
-			isa = PBXGroup;
-			children = (
-				04BC9B031ED458E7000A059A /* SMKCManger.h */,
-				04BC9B041ED458E7000A059A /* SMKCManger.m */,
-				04BC9B061ED458E7000A059A /* SMKSingleton.h */,
-				0479D9671ED5380B00C517A6 /* UIViewController+SMKControllerExtension.h */,
-				0479D9681ED5380B00C517A6 /* UIViewController+SMKControllerExtension.m */,
-			);
-			path = SMKMVVMKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,13 +198,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0479D9691ED5380B00C517A6 /* UIViewController+SMKControllerExtension.m in Sources */,
 				04BC9AFA1ED43079000A059A /* TestVC2.m in Sources */,
 				04BC9AE21ED43007000A059A /* ViewController.m in Sources */,
 				04BC9ADF1ED43007000A059A /* AppDelegate.m in Sources */,
+				0479D9711ED5940A00C517A6 /* UIViewController+SMKControllerExtension.m in Sources */,
 				04BC9AF51ED43067000A059A /* TestVC1.m in Sources */,
-				04BC9B071ED458E7000A059A /* SMKCManger.m in Sources */,
 				04BC9ADC1ED43007000A059A /* main.m in Sources */,
+				0479D9701ED5940A00C517A6 /* SMKCManger.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

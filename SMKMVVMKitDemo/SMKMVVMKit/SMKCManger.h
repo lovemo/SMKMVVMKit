@@ -30,7 +30,8 @@ typedef enum : NSUInteger {
 
 SMKSingletonH(Manger)
 
-- (void)open:(id)controller handle:(BOOL(^)(SMKRouteOptions *options))block;
+- (void)open:(id)controller handle:(BOOL(^)(SMKRouteOptions *options))handle
+                                                completion:(void (^)())completion;
 
 
 @end

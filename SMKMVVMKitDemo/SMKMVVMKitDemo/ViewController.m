@@ -29,7 +29,7 @@
         options.smk_routeType = SMKRouteModelType;
         options.smk_params = @{@"text" : @"fdfffffffffffff"};
         return YES;
-    }];
+    } completion:nil];
 
     
 }

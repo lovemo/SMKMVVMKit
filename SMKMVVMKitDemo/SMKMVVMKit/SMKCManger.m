@@ -21,10 +21,11 @@
 SMKSingletonM(Manger)
 
 
-- (void)open:(id)controller handle:(BOOL (^)(SMKRouteOptions *))block {
+- (void)open:(id)controller handle:(BOOL (^)(SMKRouteOptions *))handle
+    completion:(void (^)())completion {
     
     SMKRouteOptions *options = [[SMKRouteOptions alloc] init];
-    if (block(options)) {
+    if (handle(options)) {
 
         UIViewController *visible = [SMKCManger visibleViewController];
         UIViewController *vc = nil;
@@ -42,19 +43,21 @@ SMKSingletonM(Manger)
                 visible.hidesBottomBarWhenPushed = options.smk_hideBar;
                 [visible.navigationController pushViewController:vc animated:YES];
                 break;
-            case SMKRouteModelType:
-                [visible presentViewController:vc animated:YES completion:^{
-                    
-                }];
+            case SMKRouteModelType: {
+                    [visible presentViewController:vc animated:YES completion:^{
+                        !completion ?: completion();
+                    }];
+                }
                 break;
             case SMKRoutePopType:
                 NSAssert(visible.navigationController, @"navigationController must have a value");
                 [visible.navigationController popViewControllerAnimated:YES];
                 break;
-            case SMKRouteDismissType:
+            case SMKRouteDismissType: {
                 [visible dismissViewControllerAnimated:YES completion:^{
-                    
+                    !completion ?: completion();
                 }];
+            }
                 break;
             default:
                 break;
