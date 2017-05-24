@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "TestVC1.h"
 #import "TestVC2.h"
-#import "SMKRouter.h"
+#import "SMKCManger.h"
 #import "LxDBAnything.h"
 
 @interface ViewController ()
@@ -20,15 +20,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [[SMKRouter sharedRouter] map:@"/user" controller:[TestVC1 class]];
+
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
 
-    [[SMKRouter sharedRouter]open:@"/user" routeType:SMKRouterModelType handle:^BOOL{
-        
+    [[SMKCManger sharedManger] open:@"TestVC1" handle:^BOOL(SMKRouteOptions *options) {
+        options.smk_routeType = SMKRouteModelType;
+        options.smk_params = @{@"text" : @"fdfffffffffffff"};
         return YES;
     }];
+
     
 }
 

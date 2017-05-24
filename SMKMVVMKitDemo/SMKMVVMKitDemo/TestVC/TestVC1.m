@@ -8,8 +8,7 @@
 //
 
 #import "TestVC1.h"
-#import "SMKRouterProtocol.h"
-#import "SMKRouter.h"
+#import "UIViewController+SMKControllerExtension.h"
 
 @interface TestVC1 ()
 
@@ -23,11 +22,12 @@
     
     self.view.backgroundColor = [UIColor redColor];
 
+    NSLog(@"%@",self.smk_params);
     
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    
+
     
 }
 
