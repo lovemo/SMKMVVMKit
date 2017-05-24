@@ -20,7 +20,7 @@ typedef enum : NSUInteger {
 
 @property (nonatomic, assign) SMKRouteType  smk_routeType;
 
-@property (nonatomic, retain) id smk_params;
+@property (nonatomic, retain) id smk_routeParams;
 
 @property (nonatomic, assign) BOOL  smk_hideBar;
 

@@ -11,11 +11,11 @@
 
 @implementation UIViewController (SMKControllerExtension)
 
-- (id)smk_params {
-    return objc_getAssociatedObject(self, @selector(smk_params));
+- (id)smk_routeParams {
+    return objc_getAssociatedObject(self, @selector(smk_routeParams));
 }
-- (void)setSmk_params:(id)smk_params {
-    objc_setAssociatedObject(self, @selector(smk_params), smk_params, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (void)setSmk_routeParams:(id)smk_routeParams {
+    objc_setAssociatedObject(self, @selector(smk_routeParams), smk_routeParams, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 @end

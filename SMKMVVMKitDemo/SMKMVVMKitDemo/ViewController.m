@@ -27,7 +27,7 @@
 
     [[SMKCManger sharedManger] open:@"TestVC1" handle:^BOOL(SMKRouteOptions *options) {
         options.smk_routeType = SMKRouteModelType;
-        options.smk_params = @{@"text" : @"fdfffffffffffff"};
+        options.smk_routeParams = @{@"text" : @"fdfffffffffffff"};
         return YES;
     } completion:nil];
 

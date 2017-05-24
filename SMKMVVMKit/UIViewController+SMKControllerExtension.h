@@ -10,7 +10,7 @@
 
 @interface UIViewController (SMKControllerExtension)
 
-@property (nonatomic, strong) NSDictionary *smk_params;
+@property (nonatomic, strong) NSDictionary *smk_routeParams;
 
 
 @end

@@ -35,7 +35,7 @@ SMKSingletonM(Manger)
         }
         
         vc = [[controller alloc] init];
-        vc.smk_params = options.smk_params;
+        vc.smk_routeParams = options.smk_routeParams;
         
         switch (options.smk_routeType) {
             case SMKRoutePushType:

@@ -22,7 +22,7 @@
     
     self.view.backgroundColor = [UIColor redColor];
 
-    NSLog(@"%@",self.smk_params);
+    NSLog(@"%@",self.smk_routeParams);
     
 }
 
